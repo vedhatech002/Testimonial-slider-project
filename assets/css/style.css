@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+   
+    background-color: peachpuff;
+    display: grid;
+    place-items: center;
+}
+.container{
+    user-select: none;
+    margin-top: 8rem;
+    background-color: #ffff;
+    width: 600px;
+    padding:1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+
+}
+.img-box{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.container h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px 10px ;
+    position: relative;
+    padding: 5px;
+}
+.container h2 span{
+    color:#95ca61;
+}
+.container h2 ::after {
+    content: "";
+    width: 150px;
+    height: 5px;
+    background-color: #2f671c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: ;
+    transform: translateX(220px);
+
+}
+
+.pic{
+
+ width: 100px;
+ height: 100px;
+ background-color: #ece9ea;
+ border-radius: 50%;
+ position: relative;
+
+}
+.pic img{
+    width: 90px;
+    height:90px;
+    border-radius: 50%;
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   z-index: 10;
+}
+.pic::before{
+    content: "";
+    background-color: #2f671c;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top:-5px;
+    left: -5px;
+
+}
+.pic::after{
+    content: "";
+    background-color: #95ca61;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+
+}
+.profile{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    margin-left: 20px;
+}
+.profile h4{
+    font-size: 18px;
+    position: relative;
+}
+.profile h4::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #2f671c;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+}
+.profile{
+    font-size: 14px;
+}
+
+.text {
+    padding: 30px;
+    font-size: 14px;
+    
+    color: #222;
+}
+.arrow{
+   position: absolute;
+   cursor: pointer;
+   background-color: white;
+   padding: 5px;
+   border-radius: 50%;
+   top:170px;
+   
+}
+.fa-arrow-right {
+
+right: -40px;
+}
+.fa-arrow-left{
+    left: -40px;
+}
